@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>分页插件</title>
+    <style>
+    
+    </style>
+    <link rel="stylesheet" href= "./index.css">
+</head>
+    
+<body>
+    <div class="page-con">
+        <!-- <a href="javascript:" class="prev">&lt上一页</a>
+        <a href="javascript:" class="page">
+            <span class="page-index">1</span>
+        </a>
+        <span class="omit">...</span>
+        <a href="javascript:" class="page">
+            <span class="page-index">2</span>
+        </a>
+        <div class="current">
+            <span class="page-index">3</span>
+        </div>
+        <a href="javascript:" class="next disabled">下一页&gt</a> -->
+    </div>
+    
+    <script src="../../jquery-3.4.1.min.js"></script>
+    <script src="./pagination.js"></script>
+    <script>
+        
+        new Pagination({
+            ele:$(".page-con"),//在哪个元素内添加分页，必须是jquery元素
+            pageTotals:25,//总共多少页
+            currentPages:1,//当前是第几页
+            cb:function(){
+                //回调函数
+            }
+        })
+    
+    
+    </script>
+</body>
+</html>

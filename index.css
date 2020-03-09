@@ -1,0 +1,46 @@
+.page-con{
+    text-align: center;
+    user-select: none;
+    margin: 30px 0 10px;
+    font-size: 0;
+}
+.page-con>*{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    border: 1px solid #e1e2e3;
+    margin-right: 10px;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.page-con .prev,
+.page-con .next{
+    padding: 0 10px;
+}
+
+.page-con a:not(.disabled):hover{
+    background: rgb(168, 168, 235);;
+}
+
+.page-con .page{
+    width: 40px;
+}
+.page-con .omit{
+    border: none;
+    width: 40px;
+}
+.page-con .current{
+    width: 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+.page-con .disabled{
+    cursor: not-allowed;
+    color: #ccc;
+}
